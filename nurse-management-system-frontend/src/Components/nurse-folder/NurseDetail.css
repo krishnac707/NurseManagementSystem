@@ -1,0 +1,142 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.th-sort-up::after,
+.th-sort-down::after {
+  content: "▲▼";
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.submit-button {
+    padding: 8px !important; /* Adjust the values according to your design */
+    margin: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.filter-div{
+    margin-bottom: 10px;
+}
+
+.margin-right-css{
+    margin-right: 10px;
+}
+
+.search-input{
+    padding: 8px;
+}
+
+.add-button-css{
+    background-color: #0d6efd;
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+.add-button-css:hover {
+    background-color: #073a8c;
+}
+
+.download-button-css{
+    background-color: #198754;
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+.download-button-css:hover {
+    background-color: #08472a;
+}
+
+.edit-button-css{
+    background-color: #ffc107;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.edit-button-css:hover {
+    background-color: #cea426;
+}
+
+.delete-button-css{
+    background-color: #dc3545;
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 4px;
+}
+
+.delete-button-css:hover {
+    background-color: #9d1b28;
+}
