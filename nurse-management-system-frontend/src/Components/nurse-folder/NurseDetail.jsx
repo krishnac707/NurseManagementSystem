@@ -240,13 +240,13 @@ const NurseDetail = () => {
                         <h2>{editNurse ? 'Edit Nurse' : 'Add New Nurse'}</h2>
                         <form onSubmit={formSubmit}>
                             <label >Name : </label><br />
-                            <input type="text" name='name' onChange={handleChange} value={formData.name} /><br />
+                            <input type="text" name='name' onChange={handleChange} value={formData.name} required/><br />
                             <label >License Number : </label><br />
-                            <input type="text" name='licenseNumber' onChange={handleChange} value={formData.licenseNumber} /><br />
+                            <input type="text" name='licenseNumber' onChange={handleChange} value={formData.licenseNumber} required/><br />
                             <label >DOB : </label><br />
-                            <input type="date" name='dob' onChange={handleDOBChange} value={formData.dob} /><br />
+                            <input type="date" name='dob' onChange={handleDOBChange} value={formData.dob} required/><br />
                             <label >Age : </label><br />
-                            <input type="number" name='age' onChange={handleChange} value={formData.age} /><br />
+                            <input type="number" name='age' onChange={handleChange} value={formData.age} required/><br />
                             <input type="submit" className='submit-button' value={editNurse ? "Update Nurse" : "Add Nurse"} />
                         </form>
                     </div>
